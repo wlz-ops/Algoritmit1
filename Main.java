@@ -1,5 +1,7 @@
 
 import java.util.Random;
+import java.io.*;
+import java.util.*;
 public class Main
 {
     
@@ -23,13 +25,13 @@ public class Main
            for (int i = askel + 1; i < 10; i++) {
 
                 if (taulukko[i] < taulukko[min]) {
-                	min = i;
+                min = i;
                 }
             }
        
-    int temp = taulukko[askel];
-    taulukko[askel] = taulukko[min];
-    taulukko[min] = temp;
+        int temp = taulukko[askel];
+        taulukko[askel] = taulukko[min];
+        taulukko[min] = temp;
        }
     return taulukko; 
     }
@@ -53,33 +55,19 @@ public class Main
    
     
 	public static void main(String[] args) {
-		int[] taulu1;
-		int[] taulu2;
+		
+		int[] taulu1=randomArray();
+		int[] taulu2=randomArray();
 		int[] lajiteltu1;
 		int[] lajiteltu2;
-		taulu1=randomArray();
-		taulu2=randomArray();
-		
-		System.out.println("Taulukko 1 aluksi:");
-		for(int j=0;j<10;j++){
-		    System.out.print(" " +taulu1[j]);
-		}
-		
-		System.out.println("\nTaulukko 2 aluksi:");
-			for(int j=0;j<10;j++){
-		    		System.out.print(" " +taulu2[j]);
-		}
-		
+
+		System.out.println("Taulukko 1 aluksi: " + Arrays.toString(taulu1));
+		System.out.println("Taulukko 2 aluksi: " + Arrays.toString(taulu2));
 		lajiteltu1 = valintaLajittelu(taulu1);
-		System.out.println("\n\nTaulukko 1 lajiteltuna käyttäen valintalajittelua:");
-			for(int j=0;j<10;j++){
-		    		System.out.print(" " +lajiteltu1[j]);
-		}
-		
+		System.out.println("Taulukko 1 lajiteltuna käyttäen valintalajittelua: " + Arrays.toString(lajiteltu1));
 		lajiteltu2 = lisaysLajittelu(taulu2);
-			System.out.println("\n\nTaulukko 2 lajiteltuna käyttäen lisäys lajittelua:");
-			for(int j=0;j<10;j++){
-		    		System.out.print(" " +lajiteltu2[j]);
-		}
+		System.out.println("Taulukko 2 lajiteltuna käyttäen lisäys lajittelua: " + Arrays.toString(lajiteltu2));
+		
 	}
 }
+

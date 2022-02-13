@@ -3,7 +3,7 @@ import java.util.Random;
 public class Main
 {
     
-    public static int[] randomArray(){
+    public static int[] randomArray(){ //Muodostaa 10 satunnaisen kokonaisluvun taulukon 
         int[] array;
         Random r = new Random();
         array = new int[10];

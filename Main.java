@@ -53,34 +53,31 @@ public class Main
    
     
 	public static void main(String[] args) {
-		System.out.println("Taulukko 1 aluksi:");
-		
 		int[] taulu1;
 		int[] taulu2;
 		int[] lajiteltu1;
 		int[] lajiteltu2;
 		taulu1=randomArray();
 		taulu2=randomArray();
+		
+		System.out.println("Taulukko 1 aluksi:");
 		for(int j=0;j<10;j++){
 		    System.out.print(" " +taulu1[j]);
 		}
 		
 		System.out.println("\nTaulukko 2 aluksi:");
-		
 			for(int j=0;j<10;j++){
 		    		System.out.print(" " +taulu2[j]);
 		}
 		
 		lajiteltu1 = valintaLajittelu(taulu1);
 		System.out.println("\n\nTaulukko 1 lajiteltuna käyttäen valintalajittelua:");
-		
 			for(int j=0;j<10;j++){
 		    		System.out.print(" " +lajiteltu1[j]);
 		}
 		
 		lajiteltu2 = lisaysLajittelu(taulu2);
 			System.out.println("\n\nTaulukko 2 lajiteltuna käyttäen lisäys lajittelua:");
-		
 			for(int j=0;j<10;j++){
 		    		System.out.print(" " +lajiteltu2[j]);
 		}

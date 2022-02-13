@@ -23,7 +23,7 @@ public class Main
            for (int i = askel + 1; i < 10; i++) {
 
                 if (taulukko[i] < taulukko[min]) {
-                min = i;
+                	min = i;
                 }
             }
        
@@ -68,21 +68,21 @@ public class Main
 		System.out.println("\nTaulukko 2 aluksi:");
 		
 			for(int j=0;j<10;j++){
-		    System.out.print(" " +taulu2[j]);
+		    		System.out.print(" " +taulu2[j]);
 		}
 		
 		lajiteltu1 = valintaLajittelu(taulu1);
 		System.out.println("\n\nTaulukko 1 lajiteltuna käyttäen valintalajittelua:");
 		
 			for(int j=0;j<10;j++){
-		    System.out.print(" " +lajiteltu1[j]);
+		    		System.out.print(" " +lajiteltu1[j]);
 		}
 		
 		lajiteltu2 = lisaysLajittelu(taulu2);
 			System.out.println("\n\nTaulukko 2 lajiteltuna käyttäen lisäys lajittelua:");
 		
 			for(int j=0;j<10;j++){
-		    System.out.print(" " +lajiteltu2[j]);
+		    		System.out.print(" " +lajiteltu2[j]);
 		}
 	}
 }

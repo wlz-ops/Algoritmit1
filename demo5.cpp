@@ -1,4 +1,4 @@
-
+//ohjelma, joka kääntää merkkijonon sanat päinvastaiseen järjestykseen
 #include <iostream>
 
 

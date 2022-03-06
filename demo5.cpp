@@ -16,7 +16,7 @@ string kaanna(string lause){
     return lause;    
 }
 
-string kaannaLause(string lause) {
+string kaannaLause(string lause) { //kääntää sanan kerrallaan oikein päin 
     string lause2 = lause + " ";
     string esual = "";
     string buffer = "";
@@ -34,7 +34,7 @@ string kaannaLause(string lause) {
     return esual;
 }
 
-string poistaValit(string lause)
+string poistaValit(string lause) //funktio joka poistaa ylimääräiset välilyönnit
 {
     bool valilyonti = false;
     int n = lause.length(), i = 0, j = -1;

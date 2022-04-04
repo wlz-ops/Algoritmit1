@@ -1,2 +1,2 @@
 # Algoritmit1
-Algoritmit1 kurssin harkkoja
+Algoritmit 1 ja 2 kurssin harkkoja
